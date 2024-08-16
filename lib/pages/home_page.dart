@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:perfect_eggs/blocs/app_bloc.dart';
 import 'package:perfect_eggs/widgets/action_button_widget.dart';
+import 'package:perfect_eggs/widgets/progress_widget.dart';
 import 'package:perfect_eggs/widgets/type_buttons_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -22,6 +23,7 @@ class HomePage extends StatelessWidget {
           const SizedBox(height: 10),
           const ActionButtonWidget(),
           const SizedBox(height: 10),
+          const ProgressWidget(),
         ],
       ),
     );
