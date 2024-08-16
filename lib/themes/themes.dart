@@ -6,6 +6,7 @@ const accentColor = Color(0xFFFFFFFF);
 
 ThemeData appTheme() {
   return ThemeData(
+    primaryColor: primaryColor,
     colorScheme: ColorScheme.fromSeed(
       brightness: brightness,
       seedColor: primaryColor,
