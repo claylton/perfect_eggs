@@ -10,21 +10,21 @@ class AppBloc with ChangeNotifier {
   double seconds = 0;
   double percent = 0;
 
-  cleanTime() {
+  void cleanTime() {
     timer!.cancel();
     seconds = 0;
     percent = 0;
     notifyListeners();
   }
 
-  updateTime() {
+  void updateTime() {
     seconds++;
     percent = (seconds * 100) / time;
     notifyListeners();
     if (seconds == time) done();
   }
 
-  select(String type) {
+  void select(String type) {
     switch (type) {
       case "soft":
         selected = "soft";
@@ -51,7 +51,7 @@ class AppBloc with ChangeNotifier {
     }
   }
 
-  start() {
+  void start() {
     state = "cooking";
     timer = Timer.periodic(
       const Duration(seconds: 1),
@@ -60,15 +60,15 @@ class AppBloc with ChangeNotifier {
     notifyListeners();
   }
 
-  stop() {
+  void stop() {
     state = "stopped";
     cleanTime();
   }
 
-  done() {
+  void done() {
     state = "done";
     cleanTime();
   }
 
-  reset() => stop();
+  void reset() => stop();
 }
