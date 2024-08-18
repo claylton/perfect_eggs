@@ -30,4 +30,4 @@
 
 License This project is licensed [MIT](./LICENSE).
 
-Made with ❤️ by Claylton Santos 👋🏽 [Entre em contato!](https://www.linkedin.com/in/claylton-dos-santos-97816a150/)
+Made with ❤️ by Claylton Santos 👋🏽 [Get in touch!](https://www.linkedin.com/in/claylton-dos-santos-97816a150/)
